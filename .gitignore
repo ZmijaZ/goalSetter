@@ -1,4 +1,9 @@
 node_modules
 .env
+
+# moje nesto
 save.js
 deleteDB.js
+
+# provera routova
+request.rest

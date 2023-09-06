@@ -67,6 +67,10 @@ exports.loginUser = asyncHandler(async (req, res, next) => {
   }
 });
 
+exports.getMe = asyncHandler(async (req, res) => {
+  return res.status(200).json(req.user);
+});
+
 function generateToken(id) {
   return jwt.sign({ id }, process.env.JWT_TOKEN, { expiresIn: "100s" });
 }

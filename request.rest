@@ -3,7 +3,10 @@ Content-Type: application/json
 
 {
     "username": "qee",
-    "password": "dd"
+    "password": "ddd"
 }
 
 ###
+
+GET http://localhost:3000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjhhOWUyMWUxOTBkOGQzMmZmNjJmMCIsImlhdCI6MTY5NDAxOTc1MiwiZXhwIjoxNjk0MDE5ODUyfQ.R47aSLm5aKBorqC4Jy9yrfX4Ba7dynZN_IvoPRhU-jQ
