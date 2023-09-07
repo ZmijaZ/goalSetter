@@ -4,7 +4,9 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-// import ToastContainer from "react-toastify";
+//error viewing
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
           <Route path="/login" element={<Login></Login>}></Route>
         </Routes>
       </BrowserRouter>
-      {/* <ToastContainer></ToastContainer> */}
+      <ToastContainer></ToastContainer>
       <h1>App</h1>
     </>
   );
