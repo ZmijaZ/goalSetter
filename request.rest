@@ -2,11 +2,15 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-    "username": "qee",
-    "password": "ddd"
+    "username": "qeeee",
+    "password": "dddd",
+    "confirmPassword": "dddd"
+
+
+
 }
 
 ###
 
 GET http://localhost:3000/api/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjhhOWUyMWUxOTBkOGQzMmZmNjJmMCIsImlhdCI6MTY5NDAxOTc1MiwiZXhwIjoxNjk0MDE5ODUyfQ.R47aSLm5aKBorqC4Jy9yrfX4Ba7dynZN_IvoPRhU-jQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjliNGExZDhhMTBjNmI3OTIxOTBiMyIsImlhdCI6MTY5NDA4NjMxMiwiZXhwIjoxNjk0MDg2NDEyfQ.1VZf_Mceb1-0lQ-kxe19qN2uZ24VFDr9glxQpY64lmU

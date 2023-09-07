@@ -5,14 +5,15 @@ const User = require("../models/userModel");
 
 const { body, validationResult } = require("express-validator");
 
+console.log(process.env.JWT_TOKEN);
+
 exports.registerUser = asyncHandler(async (req, res, next) => {
   const { username, password, confirmPassword } = req.body;
 
   console.log(req.body);
 
   if (!(username && password && confirmPassword)) {
-    res.status(400);
-    return res.json({ Error: "Please add all fields" });
+    return res.status(400).json({ Error: "Please add all fields" });
   }
 
   if (password != confirmPassword) {
