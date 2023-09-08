@@ -2,15 +2,28 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-    "username": "qeeee",
-    "password": "dddd",
-    "confirmPassword": "dddd"
-
-
-
+    "username": "123",
+    "password": "ddd"
 }
 
 ###
 
 GET http://localhost:3000/api/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjliNGExZDhhMTBjNmI3OTIxOTBiMyIsImlhdCI6MTY5NDA4NjMxMiwiZXhwIjoxNjk0MDg2NDEyfQ.1VZf_Mceb1-0lQ-kxe19qN2uZ24VFDr9glxQpY64lmU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZmIxZGNiN2I3YmNlNTJjNjhjZjMyYyIsImlhdCI6MTY5NDE3ODk0NCwiZXhwIjoxNjk0MTc5MDQ0fQ.DqO-OqSzhYfF1Q8uyyq3wCui-OQpupPhYiiseM_A260
+
+###
+
+POST http://localhost:3000/api/goals/new
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZmIxZGNiN2I3YmNlNTJjNjhjZjMyYyIsImlhdCI6MTY5NDE3ODk0NCwiZXhwIjoxNjk0MTc5MDQ0fQ.DqO-OqSzhYfF1Q8uyyq3wCui-OQpupPhYiiseM_A260
+Content-Type: application/json
+
+{
+
+    "text": "this is token 1"
+
+}
+
+###
+
+GET http://localhost:3000/api/goals/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZmIxZGNiN2I3YmNlNTJjNjhjZjMyYyIsImlhdCI6MTY5NDE3ODk0NCwiZXhwIjoxNjk0MTc5MDQ0fQ.DqO-OqSzhYfF1Q8uyyq3wCui-OQpupPhYiiseM_A260
