@@ -21,9 +21,7 @@ exports.createGoal = asyncHandler(async (req, res, next) => {
 exports.getGoals = asyncHandler(async (req, res, next) => {
   const goals = await Goal.find({ user: req.user.id }).exec();
 
-  return res.status(200).json({
-    goals,
-  });
+  return res.status(200).json(goals);
 });
 
 exports.updateGoal = asyncHandler(async (req, res, next) => {

@@ -2,14 +2,14 @@ POST http://localhost:3000/api/users/login
 Content-Type: application/json
 
 {
-    "username": "123",
-    "password": "ddd"
+    "username": "asd",
+    "password": "123"
 }
 
 ###
 
 GET http://localhost:3000/api/users/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZmIxZGNiN2I3YmNlNTJjNjhjZjMyYyIsImlhdCI6MTY5NDE3ODk0NCwiZXhwIjoxNjk0MTc5MDQ0fQ.DqO-OqSzhYfF1Q8uyyq3wCui-OQpupPhYiiseM_A260
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjllMGEwZjMyMjAxZTk2NWQwNGQ1NSIsImlhdCI6MTY5NDQyNzQ5MCwiZXhwIjoxNjk0NDI3NTkwfQ.XOrglsprRgdjyweTJPr5WqTzKJgj-U_YSWbxFASuofg
 
 ###
 
@@ -26,4 +26,4 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/api/goals/me
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZmIxZGNiN2I3YmNlNTJjNjhjZjMyYyIsImlhdCI6MTY5NDE3ODk0NCwiZXhwIjoxNjk0MTc5MDQ0fQ.DqO-OqSzhYfF1Q8uyyq3wCui-OQpupPhYiiseM_A260
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZjllMGEwZjMyMjAxZTk2NWQwNGQ1NSIsImlhdCI6MTY5NDQyODQwMCwiZXhwIjoxNjk0NDI4NTAwfQ.WSkUdRgddNbLvy5kvHfQlCedLUEPzgpAv6yvKIh3IiE
